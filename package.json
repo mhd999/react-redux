@@ -5,7 +5,8 @@
   "scripts": {
     "prestart": "node tools/startMessage.js",
     "start": "node tools/devServer.js",
-    "test:lint": "eslint src tool"
+    "lint": "esw src tool",
+    "lint:watch": "npm run lint -- --watch"
   },
   "author": "Mohammad Al Mouallem",
   "license": "ISC",
