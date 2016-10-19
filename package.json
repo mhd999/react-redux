@@ -4,8 +4,10 @@
   "description": "a description",
   "scripts": {
     "prestart": "node tools/startMessage.js",
-    "start": "npm-run-all --parallel start:app lint:watch",
+    "start": "npm-run-all --parallel start:app test:watch lint:watch",
     "start:app": "node tools/devServer.js",
+    "test": "mocha --reporter spec tools/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch",
     "lint": "esw src tool",
     "lint:watch": "npm run lint -- --watch"
   },
