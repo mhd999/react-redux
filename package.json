@@ -4,7 +4,8 @@
   "description": "a description",
   "scripts": {
     "prestart": "node tools/startMessage.js",
-    "start": "node tools/devServer.js",
+    "start": "npm-run-all --parallel start:app lint:watch",
+    "start:app": "node tools/devServer.js",
     "lint": "esw src tool",
     "lint:watch": "npm run lint -- --watch"
   },
