@@ -1,13 +1,13 @@
 {
   "name": "react-redux",
   "version": "0.0.1",
-  "description": "- .editorconfig : is a file that hold the editor configuration to grant consistency between different developers using different editors - webpacl.config.dev.js : is a file that hold the webpack configurations there you can find comments describe each config line - .babelrc : is a file that hold the babel settings",
+  "description": "a description",
   "scripts": {
     "prestart": "node tools/startMessage.js",
-    "start": "babel-node tools/devServer.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node tools/devServer.js",
+    "test:lint": "eslint src tool"
   },
-  "author": "",
+  "author": "Mohammad Al Mouallem",
   "license": "ISC",
   "dependencies": {
     "lodash": "4.14.1",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "babel-cli": "6.14.0",
     "babel-core": "6.14.0",
-    "babel-eslint": "^7.0.0",
+    "babel-eslint": "^6.1.2",
     "babel-loader": "6.2.5",
     "babel-plugin-react-display-name": "2.0.0",
     "babel-preset-es2015": "6.14.0",
@@ -56,7 +56,5 @@
     "webpack": "1.13.2",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
-  },
-  "main": "webpack.config.dev.js",
-  "keywords": []
+  }
 }
