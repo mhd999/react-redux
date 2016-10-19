@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "flowtype"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-underscore-dangle": 0,
+    "flowtype/define-flow-type": 2,
+    "flowtype/space-after-type-colon": [
+      1,
+      "always"
+    ],
+    "flowtype/space-before-type-colon": [
+      2,
+      "never"
+    ],
+    "flowtype/use-flow-type": 2,
+    "flowtype/valid-syntax": 2,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/label-has-for": 0,
+    "react/require-extension": 0,
+    "react/prefer-stateless-function": 0,
+    "no-nested-ternary": 0,
+    "max-len": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
